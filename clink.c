@@ -220,6 +220,7 @@ int main(int argc, char *argv[]) {
 	sol = *st;
 	value in = min = val(st);
 	clink(st, link, in);
+	free(st);
 	gettimeofday(&t2, NULL);
 	//printcs(&sol);
 	printf("%u,%u,%f,%f,%f,%f\n", N, SEED, in, min, (in - min) / in,
